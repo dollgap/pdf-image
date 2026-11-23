@@ -27,6 +27,7 @@
 html{-webkit-text-size-adjust:100%}
 body{
   margin:0; color:var(--text); min-height:100vh; min-height:100svh;
+  word-break:keep-all; overflow-wrap:break-word;
   background:radial-gradient(1000px 480px at 50% -10%, #241a12 0%, rgba(11,14,18,0) 62%), var(--bg);
   background-attachment:fixed;
   font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic",system-ui,"Segoe UI",Roboto,sans-serif;
@@ -257,7 +258,7 @@ main{width:100%; max-width:480px; margin:0 auto; padding:2px 16px 28px; flex:1 1
       <div class="status" id="pdfStatus"><span class="dot"></span><span id="pdfStatusText">PDF 여는 중…</span></div>
 
       <div class="list-head">
-        <span class="lh-title">페이지 <b id="pageTotal">0</b>장</span>
+        <span class="lh-title"><span>페이지 <b id="pageTotal">0</b>장</span></span>
         <button type="button" class="btn sm primary" id="zipBtn">
           <svg class="i" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
           전체 ZIP 저장
@@ -295,7 +296,7 @@ main{width:100%; max-width:480px; margin:0 auto; padding:2px 16px 28px; flex:1 1
       </div>
 
       <div class="list-head">
-        <span class="lh-title">사진 <b id="photoCount">0</b>장 <span class="chip" id="photoOrder">위에서부터 1쪽</span></span>
+        <span class="lh-title"><span>사진 <b id="photoCount">0</b>장</span> <span class="chip" id="photoOrder">위에서부터 1쪽</span></span>
         <button type="button" class="btn sm" id="addMore">+ 사진 추가</button>
       </div>
 
