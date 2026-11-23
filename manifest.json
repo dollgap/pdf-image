@@ -1,0 +1,35 @@
+{
+  "name": "문서 변환기 · PDF↔이미지",
+  "short_name": "PDF↔이미지",
+  "description": "PDF를 장별 이미지로 풀거나 사진 여러 장을 PDF 1개로 묶는 오프라인 웹앱. 계약서·신분증은 서버로 보내지 않고 기기 브라우저 안에서만 변환합니다.",
+  "lang": "ko",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#0b0e12",
+  "theme_color": "#0b0e12",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
